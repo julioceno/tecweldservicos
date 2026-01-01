@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { NavItem } from "./NavItem";
+import { HamburgerButton } from "./HamburgerButton";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,42 +34,7 @@ export default function Header() {
 
         <div className="hidden w-[180px] md:block"></div>
 
-        <div className="flex items-center gap-2 md:hidden">
-          <span
-            className={`relative z-50 font-bold text-secondary transition-transform duration-300 ease-in-out ${
-              isMenuOpen ? "translate-x-0" : "translate-x-full opacity-0"
-            }`}
-          >
-            TECWELD
-            <span
-              className={`absolute bottom-0 left-0 h-0.5 bg-main transition-all duration-300 ease-out ${
-                isMenuOpen ? "w-6/12 delay-300" : "w-0"
-              }`}
-            ></span>
-          </span>
-          <button
-            onClick={toggleMenu}
-            className="relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-1.5"
-            aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
-            aria-expanded={isMenuOpen}
-          >
-            <span
-              className={`h-0.5 w-6 bg-secondary transition-all duration-300 ${
-                isMenuOpen ? "translate-y-2 rotate-45" : ""
-              }`}
-            />
-            <span
-              className={`h-0.5 w-6 bg-secondary transition-all duration-300 ${
-                isMenuOpen ? "opacity-0" : ""
-              }`}
-            />
-            <span
-              className={`h-0.5 w-6 bg-secondary transition-all duration-300 ${
-                isMenuOpen ? "-translate-y-2 -rotate-45" : ""
-              }`}
-            />
-          </button>
-        </div>
+        <HamburgerButton isOpen={isMenuOpen} onClick={toggleMenu} />
       </div>
 
       <div
