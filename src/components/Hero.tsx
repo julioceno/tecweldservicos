@@ -3,7 +3,7 @@ import Button from "./Button";
 
 export default function Hero() {
   return (
-    <section className="w-full py-10 px-4 md:py-16 md:px-6 lg:px-20">
+    <section className="w-full py-10 px-4 md:py-16">
       <div className="mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
         <div className="flex-1 max-w-xl flex flex-col items-center lg:items-start order-1 lg:order-1">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold font-fira-sans text-secondary leading-tight text-center lg:text-left mb-4 md:mb-6">

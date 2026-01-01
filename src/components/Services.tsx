@@ -23,7 +23,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="w-full py-10 px-4 md:py-16 md:px-6 lg:px-20">
+    <section className="w-full py-10 px-4">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {services.map((service, index) => (
           <ServiceCard
