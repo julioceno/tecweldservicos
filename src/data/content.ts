@@ -1,4 +1,5 @@
 export const commercialContactWhatsappLink =  "https://wa.me/5516993259020"
+export const instragramLink = "https://instagram.com/tecweld_servicos"
 
 export const content = {
   aboutUs: {

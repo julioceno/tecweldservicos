@@ -6,6 +6,9 @@ import Image from "next/image";
 import { NavItem } from "./NavItem";
 import { HamburgerButton } from "./HamburgerButton";
 import { content } from "@/data/content";
+import { SocialMedia } from "./SocialMedia";
+
+
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,7 +38,9 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="hidden w-45 md:block"></div>
+        <div className="hidden w-45 md:block">
+          <SocialMedia />
+        </div>
 
         <HamburgerButton isOpen={isMenuOpen} onClick={toggleMenu} />
       </div>
@@ -57,6 +62,9 @@ export default function Header() {
             {item.label}
           </NavItem>
         ))}
+        
+        <SocialMedia />
+
       </nav>
     </header>
   );
