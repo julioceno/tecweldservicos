@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
+import { Urbanist, Fira_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
-import Button from "@/components/Button";
 
 const urbanist = Urbanist({
   variable: "--font-urbanist",
   subsets: ["latin"],
+});
+
+const firaSans = Fira_Sans({
+  variable: "--font-fira-sans",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -22,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${urbanist.variable} font-sans antialiased bg-white`}
+        className={`${urbanist.variable} ${firaSans.variable} font-sans antialiased bg-white`}
       >
         <Header />
         {children}

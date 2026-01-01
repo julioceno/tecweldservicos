@@ -15,6 +15,7 @@
   --color-secondary: var(--secondary);
   --color-green: var(--green);
   --font-urbanist: var(--font-urbanist);
+  --font-fira-sans: var(--font-fira-sans);
 }
 
 body {
