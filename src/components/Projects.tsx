@@ -11,20 +11,20 @@ import "swiper/css/pagination";
 
 const projects = [
   {
-    title: "Jaguare Garment Industry",
-    image: "/projects/project-1.jpg",
+    title: "Serviço 1",
+    image: "/projects/project-1/img-1.jpeg",
   },
-  {
-    title: "Outbox Creatives Building",
-    image: "/projects/project-2.jpg",
+   {
+    title: "Serviço 1",
+    image: "/projects/project-1/img-1.jpeg",
   },
-  {
-    title: "Slova Private Residence",
-    image: "/projects/project-3.jpg",
+   {
+    title: "Serviço 1",
+    image: "/projects/project-1/img-1.jpeg",
   },
-  {
-    title: "Modern Office Complex",
-    image: "/projects/project-4.jpg",
+   {
+    title: "Serviço 1",
+    image: "/projects/project-1/img-1.jpeg",
   },
 ];
 
