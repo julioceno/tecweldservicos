@@ -32,7 +32,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex md:hidden flex-wrap justify-center gap-4 order-3 w-full">
+        <div className="flex lg:hidden flex-wrap justify-center gap-4 order-3 w-full">
           <Button variant="primary">Entre Em Contato</Button>
           <Button variant="outline">Nossos Serviços</Button>
         </div>

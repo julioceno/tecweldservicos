@@ -4,6 +4,7 @@ import Image from "next/image";
 import { IoChevronBack } from "react-icons/io5";
 import { projects } from "../../../data/projects";
 import { useParams } from "next/navigation";
+import Button from "@/components/Button";
 
 export default function ProjectDetailPage() {
   const params = useParams<{ id: string }>();
@@ -19,7 +20,7 @@ export default function ProjectDetailPage() {
   return (
     <main className="p-8 max-w-7xl mx-auto">
       <div className="mb-8">
-        <div className="flex items-center gap-2 mb-4">
+        <div className="flex items-center gap-2 mb-1">
           <Link href="/#services" aria-label="Voltar para projetos">
             <IoChevronBack size={32} className="text-secondary" />
           </Link>
@@ -27,8 +28,15 @@ export default function ProjectDetailPage() {
             {project.title}
           </h1>
         </div>
-
         <p className="text-gray-600 font-urbanist text-base">{project.paragraph}</p>
+        <Button
+          variant="green"
+          className="mt-2 w-fit text-sm px-4 py-2"
+          iconLeft="whatsapp"
+          openInNewTab
+        >
+          Solicite um orçamento
+        </Button>
       </div>
       
 
