@@ -9,21 +9,26 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+import Link from "next/link";
 const projects = [
   {
+    id: "project-1",
     title: "Serviço 1",
     image: "/projects/project-1/img-1.jpeg",
   },
-   {
-    title: "Serviço 1",
+  {
+    id: "project-2",
+    title: "Serviço 2",
     image: "/projects/project-1/img-1.jpeg",
   },
-   {
-    title: "Serviço 1",
+  {
+    id: "project-3",
+    title: "Serviço 3",
     image: "/projects/project-1/img-1.jpeg",
   },
-   {
-    title: "Serviço 1",
+  {
+    id: "project-4",
+    title: "Serviço 4",
     image: "/projects/project-1/img-1.jpeg",
   },
 ];
@@ -65,19 +70,21 @@ export default function Projects() {
             >
               {projects.map((project, index) => (
                 <SwiperSlide key={index}>
-                  <div className="group cursor-pointer">
-                    <div className="relative overflow-hidden rounded-lg aspect-[4/3]">
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                      />
-                      <div className="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/20 transition-colors duration-300" />
+                  <Link href={`/projects/${project.id}`}>
+                    <div className="group cursor-pointer">
+                      <div className="relative overflow-hidden rounded-lg aspect-[4/3]">
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/20 transition-colors duration-300" />
+                      </div>
+                      <h3 className="mt-4 text-lg font-semibold text-secondary font-fira-sans">
+                        {project.title}
+                      </h3>
                     </div>
-                    <h3 className="mt-4 text-lg font-semibold text-secondary font-fira-sans">
-                      {project.title}
-                    </h3>
-                  </div>
+                  </Link>
                 </SwiperSlide>
               ))}
             </Swiper>

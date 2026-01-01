@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 interface NavItemProps {
   href: string;
@@ -7,10 +9,34 @@ interface NavItemProps {
 }
 
 export function NavItem({ href, children, onClick }: NavItemProps) {
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    if (onClick) onClick();
+    if (pathname !== "/") {
+      e.preventDefault();
+      router.push(`/${href.startsWith("#") ? href : ""}`);
+    } else {
+      // Scroll suave se já estiver na home
+      const id = href.startsWith("#") ? href.substring(1) : href;
+      if (id) {
+        e.preventDefault();
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        } else {
+          // fallback: navega para hash
+          window.location.hash = href;
+        }
+      }
+    }
+  };
+
   return (
     <Link
       href={href}
-      onClick={onClick}
+      onClick={handleClick}
       className="group relative font-urbanist text-sm font-semibold text-secondary transition-colors hover:text-main"
     >
       {children}

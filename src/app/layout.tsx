@@ -28,10 +28,12 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" style={{ scrollBehavior:'smooth' }}>
       <body
-        className={`${urbanist.variable} ${firaSans.variable} font-sans antialiased bg-white`}
+        className={`${urbanist.variable} ${firaSans.variable} font-sans antialiased bg-white min-h-screen flex flex-col`}
       >
         <Header />
-        {children}
+        <main className="flex-1 flex flex-col">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
