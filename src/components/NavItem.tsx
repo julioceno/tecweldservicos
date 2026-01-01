@@ -3,12 +3,14 @@ import Link from "next/link";
 interface NavItemProps {
   href: string;
   children: React.ReactNode;
+  onClick?: () => void;
 }
 
-export function NavItem({ href, children }: NavItemProps) {
+export function NavItem({ href, children, onClick }: NavItemProps) {
   return (
     <Link
       href={href}
+      onClick={onClick}
       className="group relative font-urbanist text-sm font-semibold text-secondary transition-colors hover:text-main"
     >
       {children}
