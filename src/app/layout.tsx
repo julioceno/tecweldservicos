@@ -22,14 +22,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${urbanist.variable} font-sans antialiased`}
+        className={`${urbanist.variable} font-sans antialiased bg-white`}
       >
         <Header />
-<Button>Entre Em Contato</Button>
-
-<Button variant="secondary">Cancelar</Button>
-
-<Button variant="green">Confirmar</Button>
         {children}
       </body>
     </html>

@@ -13,7 +13,7 @@ export default function Header() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="w-full bg-white">
+    <header className="w-ful">
       <div className="container mx-auto flex items-center justify-between px-4 py-3 md:px-6 md:py-4">
         <Link href="/" className="flex items-center">
           <Image
@@ -22,7 +22,7 @@ export default function Header() {
             width={180}
             height={50}
             priority
-            className="h-10 w-auto md:h-[50px]"
+            className="h-10 w-auto md:h-[40px]"
           />
         </Link>
 
