@@ -5,33 +5,9 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import SectionTitle from "./SectionTitle";
 import CarouselNavButton from "./CarouselNavButton";
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 import Link from "next/link";
-const projects = [
-  {
-    id: "project-1",
-    title: "Serviço 1",
-    image: "/projects/project-1/img-1.jpeg",
-  },
-  {
-    id: "project-2",
-    title: "Serviço 2",
-    image: "/projects/project-1/img-1.jpeg",
-  },
-  {
-    id: "project-3",
-    title: "Serviço 3",
-    image: "/projects/project-1/img-1.jpeg",
-  },
-  {
-    id: "project-4",
-    title: "Serviço 4",
-    image: "/projects/project-1/img-1.jpeg",
-  },
-];
+import { projects } from "../data/projects";
 
 export default function Projects() {
   return (

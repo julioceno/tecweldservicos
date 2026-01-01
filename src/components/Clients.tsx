@@ -5,10 +5,6 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import SectionTitle from "./SectionTitle";
 import CarouselNavButton from "./CarouselNavButton";
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
 const clients = [
   { name: "KHS", logo: "/clients/khs.svg" },
   { name: "ALD", logo: "/clients/ald.svg" },

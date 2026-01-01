@@ -7,7 +7,7 @@ import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <div className="max-w-7xl mx-auto">
         <Hero />
         <Highlights />
