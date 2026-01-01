@@ -5,8 +5,8 @@ import Services from "@/components/Services";
 
 export default function Home() {
   return (
-    <div>
-      <div className="max-w-7xl mx-auto px-4">
+    <div className="">
+      <div className="max-w-7xl mx-auto">
         <Hero />
         <Services />
         <AboutUs />

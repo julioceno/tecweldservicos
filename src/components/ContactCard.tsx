@@ -16,25 +16,25 @@ export default function ContactCard({
   whatsappLink,
 }: ContactCardProps) {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-1 items-center text-center md:items-start md:text-left">
       <h3 className="text-xl font-bold text-white font-fira-sans">{name}</h3>
       <p className="text-white italic font-light text-sm">{role}</p>
       <p className="text-white text-sm">{phone}</p>
-      <p className="text-white text-sm">{email}</p>
       <a
-        href={whatsappLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mt-2 w-fit"
+        href={`mailto:${email}`}
+        className="text-white text-sm underline hover:text-gray-200 transition-colors"
       >
-        <Button
-          variant="primary"
-          className="text-sm px-4 py-2"
-          iconLeft="whatsapp"
-        >
-          Entre Em Contato
-        </Button>
+        {email}
       </a>
+      <Button
+        variant="primary"
+        className="mt-2 w-fit text-sm px-4 py-2"
+        iconLeft="whatsapp"
+        href={whatsappLink}
+        openInNewTab
+      >
+        Entre Em Contato
+      </Button>
     </div>
   );
 }
