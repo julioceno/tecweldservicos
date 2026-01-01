@@ -46,6 +46,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" style={{ scrollBehavior:'smooth' }}>
+      <head>
+        <link rel="icon" href="/logo-2.svg" type="image/svg+xml" />
+      </head>
       <body
         className={`${urbanist.variable} ${firaSans.variable} font-sans antialiased bg-white min-h-screen flex flex-col`}
       >
