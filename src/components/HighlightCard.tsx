@@ -1,16 +1,16 @@
 import Image from "next/image";
 
-interface ServiceCardProps {
+interface HighlightCardProps {
   icon: string;
   title: string;
   description: string;
 }
 
-export default function ServiceCard({
+export default function HighlightCard({
   icon,
   title,
   description,
-}: ServiceCardProps) {
+}: HighlightCardProps) {
   return (
     <div className="flex flex-col gap-2 items-center text-center md:items-start md:text-left">
       <div className="w-12 h-12">

@@ -20,7 +20,7 @@ const clients = [
 
 export default function Clients() {
   return (
-    <section className="w-full py-16 px-4 bg-gray-50">
+    <section className="w-full py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <SectionTitle label="Nossos Clientes" title="Alguns de nossos clientes" />
 

@@ -1,6 +1,6 @@
-import ServiceCard from "./ServiceCard";
+import HighlightCard from "./HighlightCard";
 
-const services = [
+const highlights = [
   {
     icon: "/home-icon.svg",
     title: "Montagem Mecânica",
@@ -21,16 +21,16 @@ const services = [
   },
 ];
 
-export default function Services() {
+export default function Highlights() {
   return (
     <section className="w-full py-10 px-4">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {services.map((service, index) => (
-          <ServiceCard
+        {highlights.map((highlight, index) => (
+          <HighlightCard
             key={index}
-            icon={service.icon}
-            title={service.title}
-            description={service.description}
+            icon={highlight.icon}
+            title={highlight.title}
+            description={highlight.description}
           />
         ))}
       </div>
