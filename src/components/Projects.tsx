@@ -6,9 +6,10 @@ import SectionTitle from "./SectionTitle";
 import CarouselNavButton from "./CarouselNavButton";
 
 
-import Link from "next/link";
+import ViewDetails from "./ViewDetails";
 import { projects } from "../data/projects";
 import { content } from "@/data/content";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -60,6 +61,9 @@ export default function Projects() {
                       <h3 className="mt-4 text-lg font-semibold text-secondary font-fira-sans">
                         {project.title}
                       </h3>
+                      <div className="mt-2">
+                        <ViewDetails />
+                      </div>
                     </div>
                   </Link>
                 </SwiperSlide>
