@@ -16,7 +16,7 @@ export default function AboutUs() {
           <div className="relative aspect-3/4 md:aspect-auto md:h-auto md:min-h-100 lg:min-h-125 rounded-lg overflow-hidden">
             <Image
               src="/about/about-1.svg"
-              alt="Equipamento industrial"
+              alt="Detalhe de um equipamento de tubulação industrial mantido pela Tecweld"
               fill
               className="object-cover"
             />
@@ -26,7 +26,7 @@ export default function AboutUs() {
             <div className="relative md:aspect-4/3 rounded-lg overflow-hidden">
               <Image
                 src="/about/about-2.svg"
-                alt="Profissionais trabalhando"
+                alt="Profissionais da Tecweld realizando um serviço de soldagem industrial"
                 fill
                 className="object-cover"
               />
@@ -34,16 +34,15 @@ export default function AboutUs() {
 
             <div className="flex flex-col font-urbanist">
               <h3 className="text-lg font-semibold text-secondary mb-3">
-                Especialistas em Instalações e Manutenção de Equipamentos
+                Especialistas em Montagem, Soldagem e Manutenção Industrial
               </h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                A Tecweld serviços industriais é uma empresa especializada em
-                projetos industriais, montagem mecânica, manutenção e instalações
-                de equipamentos nos setores de alimentos, bebidas, papel celulose
-                e usinas sucroalcooleiras. Com uma equipe de profissionais
-                altamente qualificados, oferecemos soluções personalizadas e
-                eficientes para atender às necessidades específicas de cada
-                cliente.
+                A <strong>Tecweld</strong> é uma empresa líder em serviços industriais, especializada em 
+                {" "}<strong>montagem mecânica</strong>, <strong>soldagem</strong>, <strong>caldeiraria</strong>, 
+                e <strong>manutenção de tubulações e equipamentos</strong>. 
+                Atendemos diversos setores, como alimentos, bebidas, papel e celulose, e usinas sucroalcooleiras. 
+                Com uma equipe de profissionais altamente qualificados, oferecemos <strong>soluções completas</strong> e 
+                personalizadas, garantindo a eficiência e segurança das operações de cada cliente.
               </p>
             </div>
           </div>
