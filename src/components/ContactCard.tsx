@@ -1,4 +1,4 @@
-import { FaWhatsapp } from "react-icons/fa";
+import Button from "./Button";
 
 interface ContactCardProps {
   name: string;
@@ -25,10 +25,15 @@ export default function ContactCard({
         href={whatsappLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 bg-main hover:bg-red-700 text-white text-sm font-medium px-4 py-2 rounded-md mt-2 w-fit transition-colors"
+        className="mt-2 w-fit"
       >
-        <FaWhatsapp className="w-4 h-4" />
-        Entre Em Contato
+        <Button
+          variant="primary"
+          className="text-sm px-4 py-2"
+          iconLeft="whatsapp"
+        >
+          Entre Em Contato
+        </Button>
       </a>
     </div>
   );
