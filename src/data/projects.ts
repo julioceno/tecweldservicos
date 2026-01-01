@@ -13,7 +13,7 @@ export const projects = [
     image: "/projects/project-2/img-1.jpeg",
     folder: "/projects/project-2",
     paragraph:
-      "Serviço de manutenção industrial focado na recuperação de equipamentos de caldeiraria, como vasos de pressão e tanques de armazenamento. Realizamos inspeções, reparos com solda especializada (MIG/MAG e eletrodo revestido) e fabricação de novas peças conforme a necessidade, seguindo rigorosas normas de segurança e qualidade.",
+      "Desenvolvemos spools de tubulação em aço inox encamisada para sistemas que exigem alta resistência à corrosão e controle térmico. O processo incluiu o corte, dobra, soldagem e testes rigorosos para assegurar a qualidade do produto final. Nós da Tecweld utilizamos técnicas avançadas de soldagem orbital para garantir a integridade das juntas, atendendo às especificações técnicas do cliente.",
   },
   {
     id: "instalacao-linha-tubulacao-industrial",
