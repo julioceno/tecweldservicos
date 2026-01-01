@@ -1,38 +1,4 @@
-import { FaWhatsapp } from "react-icons/fa";
-
-interface ContactCardProps {
-  name: string;
-  role: string;
-  phone: string;
-  email: string;
-  whatsappLink: string;
-}
-
-function ContactCard({
-  name,
-  role,
-  phone,
-  email,
-  whatsappLink,
-}: ContactCardProps) {
-  return (
-    <div className="flex flex-col gap-2">
-      <h3 className="text-xl font-bold text-white font-fira-sans">{name}</h3>
-      <p className="text-gray-400 text-sm">{role}</p>
-      <p className="text-gray-300 text-sm">{phone}</p>
-      <p className="text-gray-300 text-sm">{email}</p>
-      <a
-        href={whatsappLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 bg-main hover:bg-red-700 text-white text-sm font-medium px-4 py-2 rounded-md mt-2 w-fit transition-colors"
-      >
-        <FaWhatsapp className="w-4 h-4" />
-        Entre Em Contato
-      </a>
-    </div>
-  );
-}
+import ContactCard from "./ContactCard";
 
 export default function Contact() {
   const contacts = [
