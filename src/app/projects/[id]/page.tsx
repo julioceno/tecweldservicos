@@ -14,18 +14,24 @@ export default function ProjectDetailPage() {
     return <>{params.id}</>
   }
 
-  const imagePaths = Array.from({ length: 16 }, (_, i) => `/projects/project-1/img-${i + 1}.jpeg`);
+  const imagePaths = Array.from({ length: 16 }, (_, i) => `${project.folder}/img-${i + 1}.jpeg`);
 
   return (
     <main className="p-8">
-      <div className="flex items-center gap-2 mb-8">
-        <Link href="/#projects" aria-label="Voltar para projetos">
-          <IoChevronBack size={32} className="text-secondary" />
-        </Link>
-        <h1 className="font-extrabold text-4xl text-[#1D3152] m-0 leading-tight">
-          {project.title}
-        </h1>
+      <div className="mb-8">
+        <div className="flex items-center gap-2 mb-4">
+          <Link href="/#services" aria-label="Voltar para projetos">
+            <IoChevronBack size={32} className="text-secondary" />
+          </Link>
+          <h1 className="font-extrabold text-4xl text-[#1D3152] m-0 leading-tight">
+            {project.title}
+          </h1>
+        </div>
+
+        <p className="text-gray-600 font-urbanist text-base">{project.paragraph}</p>
       </div>
+      
+
 
       <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 mb-8">
         {imagePaths.map((path) => (

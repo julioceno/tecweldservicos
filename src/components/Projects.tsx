@@ -11,7 +11,7 @@ import { projects } from "../data/projects";
 
 export default function Projects() {
   return (
-    <section className="w-full py-16 px-4">
+    <section className="w-full py-16 px-4" id="services">
       <div className="max-w-7xl mx-auto">
         <SectionTitle label="Últimos Projetos" title="Explore nossos trabalhos" />
 
