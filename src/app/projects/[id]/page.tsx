@@ -5,6 +5,7 @@ import { projects } from "../../../data/projects";
 import Button from "@/components/Button";
 import { Metadata } from "next";
 import { commercialContactWhatsappLink, content } from "@/data/content";
+import { getProjectImages } from "@/utils/getProjectImages";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -36,28 +37,24 @@ export async function generateStaticParams() {
     }));
 }
 
+
 export default async function ProjectDetailPage({ params }: Props) {
-  const { id } = await params
-
+  const { id } = await params;
   const project = projects.find((p) => p.id === id);
-
 
   if (!project) {
     return (
-        <div className="flex flex-col items-center justify-center text-center py-20">
-            <h1 className="text-4xl font-bold mb-4">{content.projectPage.notFound.heading}</h1>
-            <p className="text-lg text-gray-600 mb-8">{content.projectPage.notFound.paragraph}</p>
-            <Link href="/#services">
-                <Button>{content.projectPage.notFound.backButton}</Button>
-            </Link>
+      <div className="flex flex-col items-center justify-center text-center py-20">
+        <h1 className="text-4xl font-bold mb-4">{content.projectPage.notFound.heading}</h1>
+        <p className="text-lg text-gray-600 mb-8">{content.projectPage.notFound.paragraph}</p>
+        <Link href="/#services">
+          <Button>{content.projectPage.notFound.backButton}</Button>
+        </Link>
       </div>
-    )
+    );
   }
 
-  const imagePaths = Array.from(
-    { length: 16 },
-    (_, i) => `${project.folder}/img-${i + 1}.jpeg`
-  );
+  const imagePaths = await getProjectImages(project.folder.replace(/^\//, ""));
 
   return (
     <main className="p-8 max-w-7xl mx-auto">
