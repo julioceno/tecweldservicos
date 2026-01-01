@@ -17,8 +17,8 @@ export default function Hero() {
           </p>
 
           <div className="hidden lg:flex flex-wrap gap-4">
-            <Button variant="primary">Entre Em Contato</Button>
-            <Button variant="outline">Nossos Serviços</Button>
+            <Button variant="primary" href="#contact">Entre Em Contato</Button>
+            <Button variant="outline" href="#services">Nossos Serviços</Button>
           </div>
         </div>
 
@@ -34,8 +34,8 @@ export default function Hero() {
         </div>
 
         <div className="flex lg:hidden flex-wrap justify-center gap-4 order-3 w-full">
-          <Button variant="primary">Entre Em Contato</Button>
-          <Button variant="outline">Nossos Serviços</Button>
+          <Button variant="primary" href="#contact">Entre Em Contato</Button>
+          <Button variant="outline" href="#services">Nossos Serviços</Button>
         </div>
       </div>
     </section>
