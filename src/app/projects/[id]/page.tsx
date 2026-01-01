@@ -17,7 +17,7 @@ export default function ProjectDetailPage() {
   const imagePaths = Array.from({ length: 16 }, (_, i) => `${project.folder}/img-${i + 1}.jpeg`);
 
   return (
-    <main className="p-8">
+    <main className="p-8 max-w-7xl mx-auto">
       <div className="mb-8">
         <div className="flex items-center gap-2 mb-4">
           <Link href="/#services" aria-label="Voltar para projetos">
