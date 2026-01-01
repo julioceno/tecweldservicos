@@ -20,8 +20,23 @@ const firaSans = Fira_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "TecWeld - Serviços Industriais",
-  description: "TecWeld Serviços Industriais",
+  metadataBase: new URL("https://tecweldservicos.com.br"),
+  title: {
+    default: "TecWeld | Soluções em Montagem e Manutenção Industrial",
+    template: "%s | TecWeld",
+  },
+  description:
+    "Especialistas em montagem, manutenção e soldagem industrial. A TecWeld oferece soluções completas e personalizadas para a indústria, com foco em qualidade e segurança.",
+  keywords: [
+    "tecweld",
+    "serviços industriais",
+    "montagem industrial",
+    "manutenção industrial",
+    "soldagem",
+    "soldagem industrial",
+    "caldeiraria",
+    "tubulação industrial",
+  ],
 };
 
 export default function RootLayout({

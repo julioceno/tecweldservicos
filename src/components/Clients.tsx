@@ -7,11 +7,11 @@ import CarouselNavButton from "./CarouselNavButton";
 
 const clients = [
   { name: "KHS", logo: "/clients/khs.svg" },
-  { name: "ALD", logo: "/clients/ald.svg" },
   { name: "Arcor", logo: "/clients/arcor.svg" },
   { name: "Tirolez", logo: "/clients/tirolez.svg" },
-  { name: "ECS", logo: "/clients/ecs.svg" },
   { name: "TWM", logo: "/clients/twm.svg" },
+  { name: "ECS", logo: "/clients/ecs.svg" },
+  { name: "ALD", logo: "/clients/ald.svg" },
 ];
 
 export default function Clients() {

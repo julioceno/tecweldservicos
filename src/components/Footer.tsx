@@ -30,10 +30,11 @@ export default function Footer() {
       <div className="bg-secondary py-3">
         <div className="container mx-auto px-4">
           <p className="text-center text-sm text-gray-300">
-            © {currentYear} TECWELD | xxx.xxx.xxx/xxxx
+            © {currentYear} TECWELD | 53.049.674/0001-47
           </p>
         </div>
       </div>
     </footer>
   );
 }
+ 
