@@ -22,7 +22,7 @@ export default function Hero() {
         </div>
 
         <div className="w-full lg:flex-1 flex justify-center lg:justify-end order-2 lg:order-2">
-          <div className="relative w-[280px] h-[350px] sm:w-72 sm:h-80 md:w-80 md:h-96 lg:w-[400px] lg:h-[500px] rounded-2xl overflow-hidden flex-shrink-0">
+          <div className="relative w-70 h-87.5 sm:w-72 sm:h-80 md:w-80 md:h-96 lg:w-100 lg:h-125 rounded-2xl overflow-hidden shrink-0">
             <Image
               src="/main.svg"
               alt="Trabalhadores em serviço"
