@@ -6,11 +6,12 @@ import Button from "@/components/Button";
 import { Metadata } from "next";
 
 type Props = {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const project = projects.find((p) => p.id === params.id);
+  const { id } = await params
+  const project = projects.find((p) => p.id === id);
 
   if (!project) {
     return {
@@ -34,8 +35,11 @@ export async function generateStaticParams() {
     }));
 }
 
-export default function ProjectDetailPage({ params }: Props) {
-  const project = projects.find((p) => p.id === params.id);
+export default async function ProjectDetailPage({ params }: Props) {
+  const { id } = await params
+
+  const project = projects.find((p) => p.id === id);
+
 
   if (!project) {
     return (
