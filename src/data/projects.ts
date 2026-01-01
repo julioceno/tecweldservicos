@@ -1,6 +1,6 @@
 export const projects = [
   {
-    id: "project-1",
+    id: "montagem-mecanica-processo-liquido",
     title: "Montagem Mecânica de Processo Líquido",
     image: "/projects/project-1/img-1.jpeg",
     folder: "/projects/project-1",
@@ -8,15 +8,15 @@ export const projects = [
       "Realizamos a montagem mecânica completa de sistemas de processo líquido, incluindo a instalação de tanques, tubulações de aço inox, bombas e válvulas. Este projeto envolveu a aplicação de soldagem TIG e orbital para garantir um acabamento sanitário, essencial para a indústria alimentícia. A Tecweld garantiu a execução do projeto com máxima segurança e dentro do cronograma.",
   },
   {
-    id: "project-2",
-    title: "Manutenção de Caldeiraria e Estruturas Metálicas",
-    image: "/projects/project-1/img-2.jpeg",
-    folder: "/projects/project-1",
+    id: "fabricacao-spool-inox-encamisada",
+    title: "Fabricação de Spool Inox Encamisada",
+    image: "/projects/project-2/img-1.jpeg",
+    folder: "/projects/project-2",
     paragraph:
       "Serviço de manutenção industrial focado na recuperação de equipamentos de caldeiraria, como vasos de pressão e tanques de armazenamento. Realizamos inspeções, reparos com solda especializada (MIG/MAG e eletrodo revestido) e fabricação de novas peças conforme a necessidade, seguindo rigorosas normas de segurança e qualidade.",
   },
   {
-    id: "project-3",
+    id: "instalacao-linha-tubulacao-industrial",
     title: "Instalação de Linha de Tubulação Industrial",
     image: "/projects/project-1/img-3.jpeg",
     folder: "/projects/project-1",
