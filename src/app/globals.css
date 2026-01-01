@@ -3,13 +3,18 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --main: #ED1C24;
+  --secondary: #1D3152;
+  --green: #22C55E;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-main: var(--main);
+  --color-secondary: var(--secondary);
+  --color-green: var(--green);
+  --font-urbanist: var(--font-urbanist);
 }
 
 @media (prefers-color-scheme: dark) {
