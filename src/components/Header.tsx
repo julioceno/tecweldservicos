@@ -6,6 +6,12 @@ import Image from "next/image";
 import { NavItem } from "./NavItem";
 import { HamburgerButton } from "./HamburgerButton";
 
+const navItems = [
+  { href: "#about", label: "Sobre Nós" },
+  { href: "#services", label: "Serviços" },
+  { href: "#contact", label: "Contato" },
+];
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -22,17 +28,19 @@ export default function Header() {
             width={180}
             height={50}
             priority
-            className="h-10 w-auto md:h-[40px]"
+            className="h-10 w-auto md:h-10"
           />
         </Link>
 
         <nav className="hidden flex-1 items-center justify-center gap-8 md:flex">
-          <NavItem href="#sobre">Sobre Nós</NavItem>
-          <NavItem href="#servicos">Serviços</NavItem>
-          <NavItem href="#contato">Contato</NavItem>
+          {navItems.map((item) => (
+            <NavItem key={item.href} href={item.href}>
+              {item.label}
+            </NavItem>
+          ))}
         </nav>
 
-        <div className="hidden w-[180px] md:block"></div>
+        <div className="hidden w-45 md:block"></div>
 
         <HamburgerButton isOpen={isMenuOpen} onClick={toggleMenu} />
       </div>
@@ -49,15 +57,11 @@ export default function Header() {
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <NavItem href="#sobre" onClick={closeMenu}>
-          Sobre Nós
-        </NavItem>
-        <NavItem href="#servicos" onClick={closeMenu}>
-          Serviços
-        </NavItem>
-        <NavItem href="#contato" onClick={closeMenu}>
-          Contato
-        </NavItem>
+        {navItems.map((item) => (
+          <NavItem key={item.href} href={item.href} onClick={closeMenu}>
+            {item.label}
+          </NavItem>
+        ))}
       </nav>
     </header>
   );

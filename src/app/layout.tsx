@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" style={{ scrollBehavior:'smooth' }}>
       <body
         className={`${urbanist.variable} ${firaSans.variable} font-sans antialiased bg-white`}
       >
