@@ -4,24 +4,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import SectionTitle from "./SectionTitle";
 import CarouselNavButton from "./CarouselNavButton";
-
-const clients = [
-  { name: "KHS", logo: "/clients/khs.svg" },
-  { name: "Arcor", logo: "/clients/arcor.svg" },
-  { name: "Tirolez", logo: "/clients/tirolez.svg" },
-  { name: "TWM", logo: "/clients/twm.svg" },
-  { name: "ECS", logo: "/clients/ecs.svg" },
-  { name: "ALD", logo: "/clients/ald.svg" },
-];
+import { content } from "@/data/content";
 
 export default function Clients() {
   return (
     <section className="w-full py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <SectionTitle label="Nossos Clientes" title="Alguns de nossos clientes" />
+        <SectionTitle label={content.clients.label} title={content.clients.title} />
 
         <div className="mt-12 relative">
-          <CarouselNavButton direction="prev" ariaLabel="Clientes anteriores" />
+          <CarouselNavButton direction="prev" ariaLabel={content.clients.prevButtonAriaLabel} />
 
           <div className="px-12">
             <Swiper
@@ -49,7 +41,7 @@ export default function Clients() {
               }}
               className="pb-12!"
             >
-              {clients.map((client, index) => (
+              {content.clients.list.map((client, index) => (
                 <SwiperSlide key={index} className="py-4">
                   <div className="flex items-center justify-center h-24 w-full transition-transform duration-300 hover:-translate-y-2">
                     <img
@@ -63,7 +55,7 @@ export default function Clients() {
             </Swiper>
           </div>
 
-          <CarouselNavButton direction="next" ariaLabel="Próximos clientes" />
+          <CarouselNavButton direction="next" ariaLabel={content.clients.nextButtonAriaLabel} />
         </div>
       </div>
     </section>

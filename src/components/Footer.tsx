@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { content } from "@/data/content";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,7 +12,7 @@ export default function Footer() {
           <Link href="/" className="mb-4">
             <Image
               src="/logo.svg"
-              alt="Tecweld Serviços Industriais"
+              alt={content.footer.logoAlt}
               width={180}
               height={50}
               className="h-12 w-auto"
@@ -19,10 +20,10 @@ export default function Footer() {
           </Link>
 
           <p className="text-center text-sm text-gray-600">
-            Excelência e Confiabilidade em
+            {content.footer.line1}
           </p>
           <p className="text-center text-sm text-gray-600">
-            Serviços Industriais
+            {content.footer.line2}
           </p>
         </div>
       </div>
@@ -30,7 +31,7 @@ export default function Footer() {
       <div className="bg-secondary py-3">
         <div className="container mx-auto px-4">
           <p className="text-center text-sm text-gray-300">
-            © {currentYear} TECWELD | 53.049.674/0001-47
+            © {currentYear} {content.footer.copyright}
           </p>
         </div>
       </div>

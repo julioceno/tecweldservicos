@@ -4,6 +4,7 @@ import { IoChevronBack } from "react-icons/io5";
 import { projects } from "../../../data/projects";
 import Button from "@/components/Button";
 import { Metadata } from "next";
+import { commercialContactWhatsappLink, content } from "@/data/content";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -15,8 +16,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!project) {
     return {
-      title: "Projeto não encontrado",
-      description: "Este projeto não foi encontrado.",
+      title: content.projectPage.notFound.title,
+      description: content.projectPage.notFound.description,
     };
   }
 
@@ -44,10 +45,10 @@ export default async function ProjectDetailPage({ params }: Props) {
   if (!project) {
     return (
         <div className="flex flex-col items-center justify-center text-center py-20">
-            <h1 className="text-4xl font-bold mb-4">Projeto não encontrado</h1>
-            <p className="text-lg text-gray-600 mb-8">O projeto que você está procurando não existe.</p>
+            <h1 className="text-4xl font-bold mb-4">{content.projectPage.notFound.heading}</h1>
+            <p className="text-lg text-gray-600 mb-8">{content.projectPage.notFound.paragraph}</p>
             <Link href="/#services">
-                <Button>Voltar para o início</Button>
+                <Button>{content.projectPage.notFound.backButton}</Button>
             </Link>
       </div>
     )
@@ -62,7 +63,7 @@ export default async function ProjectDetailPage({ params }: Props) {
     <main className="p-8 max-w-7xl mx-auto">
       <div className="mb-8">
         <div className="flex items-center gap-2 mb-1">
-          <Link href="/#services" aria-label="Voltar para projetos">
+          <Link href="/#services" aria-label={content.projectPage.backButtonAriaLabel}>
             <IoChevronBack size={32} className="text-secondary" />
           </Link>
           <h1 className="font-extrabold text-4xl text-[#1D3152] m-0 leading-tight">
@@ -76,9 +77,10 @@ export default async function ProjectDetailPage({ params }: Props) {
           variant="green"
           className="mt-2 w-fit text-sm px-4 py-2"
           iconLeft="whatsapp"
+          href={commercialContactWhatsappLink}
           openInNewTab
         >
-          Solicite um orçamento
+          {content.projectPage.quoteButton}
         </Button>
       </div>
 

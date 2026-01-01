@@ -5,12 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { NavItem } from "./NavItem";
 import { HamburgerButton } from "./HamburgerButton";
-
-const navItems = [
-  { href: "#about", label: "Sobre Nós" },
-  { href: "#services", label: "Serviços" },
-  { href: "#contact", label: "Contato" },
-];
+import { content } from "@/data/content";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +19,7 @@ export default function Header() {
         <Link href="/" className="flex items-center">
           <Image
             src="/logo.svg"
-            alt="Tecweld Serviços Industriais"
+            alt={content.header.logoAlt}
             width={180}
             height={50}
             priority
@@ -33,7 +28,7 @@ export default function Header() {
         </Link>
 
         <nav className="hidden flex-1 items-center justify-center gap-8 md:flex">
-          {navItems.map((item) => (
+          {content.header.navItems.map((item) => (
             <NavItem key={item.href} href={item.href}>
               {item.label}
             </NavItem>
@@ -57,7 +52,7 @@ export default function Header() {
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        {navItems.map((item) => (
+        {content.header.navItems.map((item) => (
           <NavItem key={item.href} href={item.href} onClick={closeMenu}>
             {item.label}
           </NavItem>

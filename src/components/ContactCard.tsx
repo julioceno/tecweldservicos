@@ -1,3 +1,4 @@
+import { content } from "@/data/content";
 import Button from "./Button";
 
 interface ContactCardProps {
@@ -33,7 +34,7 @@ export default function ContactCard({
         href={whatsappLink}
         openInNewTab
       >
-        Entre Em Contato
+        {content.contact.buttonText}
       </Button>
     </div>
   );

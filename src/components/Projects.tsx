@@ -8,15 +8,16 @@ import CarouselNavButton from "./CarouselNavButton";
 
 import Link from "next/link";
 import { projects } from "../data/projects";
+import { content } from "@/data/content";
 
 export default function Projects() {
   return (
     <section className="w-full py-16 px-4" id="services">
       <div className="max-w-7xl mx-auto">
-        <SectionTitle label="Últimos Projetos" title="Explore nossos trabalhos" />
+        <SectionTitle label={content.projects.label} title={content.projects.title} />
 
         <div className="mt-12 relative">
-          <CarouselNavButton direction="prev" ariaLabel="Projetos anteriores" />
+          <CarouselNavButton direction="prev" ariaLabel={content.projects.prevButtonAriaLabel} />
 
           <div className="px-12">
             <Swiper
@@ -66,7 +67,7 @@ export default function Projects() {
             </Swiper>
           </div>
 
-          <CarouselNavButton direction="next" ariaLabel="Próximos projetos" />
+          <CarouselNavButton direction="next" ariaLabel={content.projects.nextButtonAriaLabel} />
         </div>
       </div>
     </section>

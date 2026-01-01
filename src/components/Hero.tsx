@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "./Button";
+import { content } from "@/data/content";
 
 export default function Hero() {
   return (
@@ -7,18 +8,16 @@ export default function Hero() {
       <div className="mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
         <div className="flex-1 max-w-xl flex flex-col items-center lg:items-start order-1 lg:order-1">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold font-fira-sans text-secondary leading-tight text-center lg:text-left mb-4 md:mb-6">
-            Soluções Completas em Montagem e Manutenção Industrial
+            {content.hero.title}
           </h1>
 
           <p className="text-gray-600 text-base md:text-lg text-center lg:text-left mb-0 lg:mb-8">
-            Oferecemos serviços especializados de montagem, manutenção e
-            soldagem para a indústria, com foco em segurança, qualidade e
-            agilidade para o seu projeto.
+            {content.hero.description}
           </p>
 
           <div className="hidden lg:flex flex-wrap gap-4">
-            <Button variant="primary" href="#contact">Entre Em Contato</Button>
-            <Button variant="outline" href="#services">Nossos Serviços</Button>
+            <Button variant="primary" href="#contact">{content.hero.contactButton}</Button>
+            <Button variant="outline" href="#services">{content.hero.servicesButton}</Button>
           </div>
         </div>
 
@@ -26,7 +25,7 @@ export default function Hero() {
           <div className="relative w-70 h-87.5 sm:w-72 sm:h-80 md:w-80 md:h-96 lg:w-100 lg:h-125 rounded-2xl overflow-hidden shrink-0">
             <Image
               src="/main.svg"
-              alt="Equipe da Tecweld realizando serviços de montagem e manutenção industrial com segurança"
+              alt={content.hero.imageAlt}
               fill
               className="object-cover"
             />
@@ -34,8 +33,8 @@ export default function Hero() {
         </div>
 
         <div className="flex lg:hidden flex-wrap justify-center gap-4 order-3 w-full">
-          <Button variant="primary" href="#contact">Entre Em Contato</Button>
-          <Button variant="outline" href="#services">Nossos Serviços</Button>
+          <Button variant="primary" href="#contact">{content.hero.contactButton}</Button>
+          <Button variant="outline" href="#services">{content.hero.servicesButton}</Button>
         </div>
       </div>
     </section>

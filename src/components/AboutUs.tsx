@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
+import { content } from "@/data/content";
 
 export default function AboutUs() {
   return (
@@ -7,8 +8,8 @@ export default function AboutUs() {
       <div className="container mx-auto px-4">
         <div className="mb-10">
           <SectionTitle
-            label="SOBRE NÓS"
-            title="Conheça mais sobre nossa empresa"
+            label={content.aboutUs.label}
+            title={content.aboutUs.title}
           />
         </div>
 
@@ -34,16 +35,12 @@ export default function AboutUs() {
 
             <div className="flex flex-col font-urbanist">
               <h3 className="text-lg font-semibold text-secondary mb-3">
-                Especialistas em Montagem, Soldagem e Manutenção Industrial
+                {content.aboutUs.subtitle}
               </h3>
-              <p className="text-gray-600 leading-relaxed text-sm">
-                A <strong>Tecweld</strong> é uma empresa líder em serviços industriais, especializada em 
-                {" "}<strong>montagem mecânica</strong>, <strong>soldagem</strong>, <strong>caldeiraria</strong>, 
-                e <strong>manutenção de tubulações e equipamentos</strong>. 
-                Atendemos diversos setores, como alimentos, bebidas, papel e celulose, e usinas sucroalcooleiras. 
-                Com uma equipe de profissionais altamente qualificados, oferecemos <strong>soluções completas</strong> e 
-                personalizadas, garantindo a eficiência e segurança das operações de cada cliente.
-              </p>
+              <p
+                className="text-gray-600 leading-relaxed text-sm"
+                dangerouslySetInnerHTML={{ __html: content.aboutUs.description }}
+              />
             </div>
           </div>
         </div>
