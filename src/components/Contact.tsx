@@ -16,6 +16,13 @@ export default function Contact() {
       email: "nivandilson@tecweldservicos.com.br",
       whatsappLink: "https://wa.me/5516983402816",
     },
+    {
+      name: "Comercial",
+      role: "Departamento comercial",
+      phone: "(16) 99325-9020",
+      email: "comercial@tecweldservicos.com.br",
+      whatsappLink: "https://wa.me/5516993259020",
+    },
   ];
 
   return (
@@ -25,7 +32,7 @@ export default function Contact() {
           Entre em contato com a gente
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center md:justify-start gap-16">
           {contacts.map((contact, index) => (
             <ContactCard key={index} {...contact} />
           ))}
