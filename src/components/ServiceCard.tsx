@@ -12,7 +12,7 @@ export default function ServiceCard({
   description,
 }: ServiceCardProps) {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2 items-center text-center md:items-start md:text-left">
       <div className="w-12 h-12">
         <Image src={icon} alt="" width={48} height={48} />
       </div>

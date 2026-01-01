@@ -1,6 +1,5 @@
 import AboutUs from "@/components/AboutUs";
 import Hero from "@/components/Hero";
-import SectionTitle from "@/components/SectionTitle";
 import Services from "@/components/Services";
 
 export default function Home() {
