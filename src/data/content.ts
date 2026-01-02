@@ -6,7 +6,7 @@ export const content = {
     label: "SOBRE NÓS",
     title: "Conheça mais sobre nossa empresa",
     subtitle: "Especialistas em Montagem, Soldagem e Manutenção Industrial",
-    description: "A <strong>Tecweld</strong> é uma empresa líder em serviços industriais, especializada em <strong>montagem mecânica</strong>, <strong>soldagem</strong>, <strong>caldeiraria</strong>, e <strong>manutenção de tubulações e equipamentos</strong>. Atendemos diversos setores, como alimentos, bebidas, papel e celulose, e usinas sucroalcooleiras. Com uma equipe de profissionais altamente qualificados, oferecemos <strong>soluções completas</strong> e personalizadas, garantindo a eficiência e segurança das operações de cada cliente.<br/> <strong>Nossa maior missão </strong> é criar vínculos fortes e duradouros com nossos clientes, prestando os melhores serviços com <strong> segurança, qualidade e agilidade. </strong>"
+    description: "A <strong>Tecweld</strong> é uma empresa líder em serviços industriais, especializada em <strong>montagem mecânica</strong>, <strong>soldagem</strong>, <strong>caldeiraria</strong>, e <strong>manutenção de tubulações e equipamentos</strong>. Atendemos diversos setores, como alimentos, bebidas, papel e celulose, e usinas sucroalcooleiras. Com uma equipe de profissionais altamente qualificados, oferecemos <strong>soluções completas</strong> e personalizadas, garantindo a eficiência e segurança das operações de cada cliente.<br/>"
   },
   clients: {
     label: "Nossos Clientes",
@@ -72,10 +72,10 @@ export const content = {
   },
   highlights: [
     {
-      icon: "/home-icon.svg",
-      title: "Montagem Mecânica",
+      icon: "/target-icon.svg",
+      title: "Nossa Missão",
       description:
-        "Execução de projetos industriais e montagem de equipamentos com foco em precisão e agilidade",
+        "Nossa maior missão é criar vínculos fortes e duradouros com nossos clientes, prestando os melhores serviços com segurança, qualidade e agilidade.",
     },
     {
       icon: "/book-icon.svg",
