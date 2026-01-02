@@ -32,8 +32,8 @@ export default function Footer() {
       <div className="flex justify-center gap-1 mb-4">
         <RiMapPin2Fill className="text-main mt-2"/>
         <p className="text-center text-sm text-gray-600 mt-2 flex gap-1">
-          Rua Neusa Ros Mazer, nº 280, Bloco A, Apto. 01<br />
-          Jardim Veneto II – Sertãozinho/SP
+          {content.footer.addressLine1} <br />
+          {content.footer.addressLine2}
         </p>
       </div>
       <div className="bg-secondary py-3">

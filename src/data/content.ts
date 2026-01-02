@@ -5,7 +5,7 @@ export const content = {
   aboutUs: {
     label: "SOBRE NÓS",
     title: "Conheça mais sobre nossa empresa",
-    subtitle: "Especialistas em Montagem, Soldagem e Manutenção Industrial",
+    subtitle: "Especializada em Montagem, Soldagem e Manutenção Industrial",
     description: "A <strong>Tecweld</strong> é uma empresa líder em serviços industriais, especializada em <strong>montagem mecânica</strong>, <strong>soldagem</strong>, <strong>caldeiraria</strong>, e <strong>manutenção de tubulações e equipamentos</strong>. Atendemos diversos setores, como alimentos, bebidas, papel e celulose, e usinas sucroalcooleiras. Com uma equipe de profissionais altamente qualificados, oferecemos <strong>soluções completas</strong> e personalizadas, garantindo a eficiência e segurança das operações de cada cliente.<br/>"
   },
   clients: {
@@ -53,6 +53,8 @@ export const content = {
     logoAlt: "Tecweld Serviços Industriais",
     line1: "Excelência e Confiabilidade em",
     line2: "Serviços Industriais",
+    addressLine1: "Rua Neusa Ros Mazer, nº 280",
+    addressLine2: "Jardim Veneto II – Sertãozinho/SP",
     copyright: "TECWELD | 53.049.674/0001-47",
   },
   header: {
@@ -81,7 +83,7 @@ export const content = {
       icon: "/book-icon.svg",
       title: "Fabricação Especializada",
       description:
-        "Especialistas na fabricação de Spool Inox Encamisada e componentes de alta performance para diversos setores.",
+        "Especializada na fabricação de Spool Inox Encamisada e componentes de alta performance para diversos setores.",
     },
     {
       icon: "/tools-icon.svg",

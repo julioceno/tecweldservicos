@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | TECWELD",
   },
   description:
-    "Especialistas em montagem, manutenção e soldagem industrial. A TecWeld oferece soluções completas e personalizadas para a indústria, com foco em qualidade e segurança.",
+    "Especializada em montagem, manutenção e soldagem industrial. A TecWeld oferece soluções completas e personalizadas para a indústria, com foco em qualidade e segurança.",
   keywords: [
     "tecweld",
     "serviços industriais",
