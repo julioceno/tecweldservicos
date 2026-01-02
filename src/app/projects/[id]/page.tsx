@@ -81,7 +81,7 @@ export default async function ProjectDetailPage({ params }: Props) {
         </Button>
       </div>
 
-      <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 mb-8">
+      <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4  gap-4 mb-8">
         {imagePaths.map((path) => (
           <div key={path} className="mb-4 break-inside-avoid">
             <Image
