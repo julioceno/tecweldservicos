@@ -30,7 +30,6 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex justify-center gap-1 mb-4">
-        <RiMapPin2Fill className="text-main mt-2"/>
         <p className="text-center text-sm text-gray-600 mt-2 flex gap-1">
           {content.footer.addressLine1} <br />
           {content.footer.addressLine2}
