@@ -8,9 +8,17 @@ import Highlights from "@/components/Highlights";
 import Projects from "@/components/Projects";
 
 export const metadata: Metadata = {
-  title: "Tecweld",
+  title: "TECWELD",
   description:
     "A TecWeld é sua parceira estratégica em soluções industriais, oferecendo serviços de montagem, manutenção e soldagem com excelência, segurança e foco nos resultados de sua empresa.",
+  openGraph: {
+    images: [
+      {
+        url: "/logo.svg",
+        alt: "Tecweld Logo"
+      }
+    ]
+  }
 };
 
 export default function Home() {

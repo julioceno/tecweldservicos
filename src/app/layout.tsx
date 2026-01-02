@@ -22,8 +22,8 @@ const firaSans = Fira_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://tecweldservicos.com.br"),
   title: {
-    default: "TecWeld | Soluções em Montagem e Manutenção Industrial",
-    template: "%s | TecWeld",
+    default: "TECWELD | Soluções em Montagem e Manutenção Industrial",
+    template: "%s | TECWELD",
   },
   description:
     "Especialistas em montagem, manutenção e soldagem industrial. A TecWeld oferece soluções completas e personalizadas para a indústria, com foco em qualidade e segurança.",
