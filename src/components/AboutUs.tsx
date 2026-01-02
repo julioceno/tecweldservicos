@@ -34,7 +34,7 @@ export default function AboutUs() {
             </div>
 
             <div className="flex flex-col font-urbanist">
-              <h3 className="text-lg font-semibold text-secondary mb-3">
+              <h3 className="text-lg font-semibold text-secondary mb-1">
                 {content.aboutUs.subtitle}
               </h3>
               <p

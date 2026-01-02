@@ -6,7 +6,7 @@ export const content = {
     label: "SOBRE NÓS",
     title: "Conheça mais sobre nossa empresa",
     subtitle: "Especialistas em Montagem, Soldagem e Manutenção Industrial",
-    description: "A <strong>Tecweld</strong> é uma empresa líder em serviços industriais, especializada em <strong>montagem mecânica</strong>, <strong>soldagem</strong>, <strong>caldeiraria</strong>, e <strong>manutenção de tubulações e equipamentos</strong>. Atendemos diversos setores, como alimentos, bebidas, papel e celulose, e usinas sucroalcooleiras. Com uma equipe de profissionais altamente qualificados, oferecemos <strong>soluções completas</strong> e personalizadas, garantindo a eficiência e segurança das operações de cada cliente.",
+    description: "A <strong>Tecweld</strong> é uma empresa líder em serviços industriais, especializada em <strong>montagem mecânica</strong>, <strong>soldagem</strong>, <strong>caldeiraria</strong>, e <strong>manutenção de tubulações e equipamentos</strong>. Atendemos diversos setores, como alimentos, bebidas, papel e celulose, e usinas sucroalcooleiras. Com uma equipe de profissionais altamente qualificados, oferecemos <strong>soluções completas</strong> e personalizadas, garantindo a eficiência e segurança das operações de cada cliente.<br/> <strong>Nossa maior missão </strong> é criar vínculos fortes e duradouros com nossos clientes, prestando os melhores serviços com <strong> segurança, qualidade e agilidade. </strong>"
   },
   clients: {
     label: "Nossos Clientes",
@@ -91,7 +91,7 @@ export const content = {
     },
   ],
   projects: {
-    label: "Últimos Projetos",
+    label: "Últimos Serviços",
     title: "Explore nossos trabalhos",
     prevButtonAriaLabel: "Projetos anteriores",
     nextButtonAriaLabel: "Próximos projetos",
