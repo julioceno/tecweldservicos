@@ -13,8 +13,8 @@ export function HamburgerButton({ isOpen, onClick }: HamburgerButtonProps) {
       }`}
     >
       <span
-        className={`relative font-bold text-secondary transition-transform duration-300 ease-in-out ${
-          isOpen ? "translate-x-0" : "translate-x-full opacity-0"
+        className={`  text-secondary transition-transform duration-300 ease-in-out ${
+          isOpen ? "translate-x-0" : "opacity-0"
         }`}
       >
         TECWELD
