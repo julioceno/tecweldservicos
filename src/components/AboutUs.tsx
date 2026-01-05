@@ -14,7 +14,7 @@ export default function AboutUs() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="relative aspect-3/4 md:aspect-auto md:h-auto md:min-h-100 lg:min-h-125 rounded-lg overflow-hidden">
+          <div className="relative aspect-3/4 md:aspect-auto md:h-64 md:min-h-64 lg:h-80 lg:min-h-80 rounded-lg overflow-hidden">
             <Image
               src="/about/about-1.svg"
               alt="Detalhe de um equipamento de tubulação industrial mantido pela Tecweld"
