@@ -16,6 +16,14 @@ export const projects = [
       "Desenvolvemos spools de tubulação em aço inox encamisada para sistemas que exigem alta resistência à corrosão e controle térmico. O processo incluiu o corte, dobra, soldagem e testes rigorosos para assegurar a qualidade do produto final. Nós da Tecweld utilizamos técnicas avançadas de soldagem para garantir a integridade das juntas, atendendo às especificações técnicas do cliente.",
   },
   {
+    id: "servicos-pressao-caldeira-industrial",
+    title: "Serviços realizados na parte de pressão de caldeira",
+    image: "/projects/project-3/img-1.jpeg",
+    folder: "/projects/project-3",
+    paragraph:
+      "Executamos serviços especializados na parte de pressão de caldeiras industriais, incluindo inspeção, manutenção, soldagem e testes hidrostáticos para garantir a integridade e segurança operacional. Utilizamos procedimentos rigorosos e mão de obra qualificada para atender às normas técnicas e garantir a confiabilidade do sistema sob pressão. A Tecweld assegura a máxima qualidade e segurança em todas as etapas do processo.",
+  },
+  {
     id: "instalacao-linha-tubulacao-industrial",
     title: "Instalação de Linha de Tubulação Industrial",
     image: "/projects/project-1/img-3.jpeg",
